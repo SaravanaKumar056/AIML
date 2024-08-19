@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+        }
+        th {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th colspan="4">Header</th>
+    </tr>
+    <tr>
+        <td rowspan="6">span rows</td>
+        <td colspan="3">Header</td>
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="2">span columns</td>
+        <td rowspan="5">span both</td>
+    </tr>
+    <tr></tr> <!-- Empty row -->
+    <tr>
+        <td colspan="2">span columns</td>
+    </tr>
+    <tr>
+        <td rowspan="2">span rows</td>
+        <td rowspan="2">span both</td>
+    </tr>
+    <tr></tr> <!-- Empty row -->
+</table>
+
+</body>
+</html>
